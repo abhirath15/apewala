@@ -1,9 +1,256 @@
-<!DOCTYPE html>
-<html>
+<!doctype html>
+<html lang="en" class="no-js">
 <head>
-	<title></title>
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,700' rel='stylesheet' type='text/css'>
+ <link href="css/font-awesome-animation.min.css" rel="stylesheet">
+<link href="css/font-awesome.css" rel="stylesheet">
+<link href="css/animate.min.css" rel="stylesheet" media="all">
+<link href="https://fonts.googleapis.com/css?family=Roboto+Condensed" rel="stylesheet"> 
+	<link rel="stylesheet" href="css/reset.css"> <!-- CSS reset -->
+	<link rel="stylesheet" href="css/style.css"> <!-- Resource style -->
+	<script src="js/modernizr.js"></script> <!-- Modernizr -->
+  	
+	<title>Secondary Fixed Navigation</title>
 </head>
 <body>
+	<section id="cd-intro">
+		<div id="cd-intro-tagline">
+			<p class="main_heading">BOOK YOUR RIDE HERE</p>
+			<button type="submit" id="myBtn" class="cd-btn">BOOK RIDE</submit>
 
+		</div> <!-- #cd-intro-tagline -->
+	   <!-- #cd-intro -->
+
+<!-- The Modal -->
+<div id="myModal" class="modal">
+
+  <!-- Modal content -->
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <div class="container" >
+  <div class="row">
+    <div class="col-md-12">
+      
+      
+        
+    <form class="form" action="/action_page.php" method="get">
+      <h1 id="location_heading">LOCATION</h1>
+    <div class="form-group">
+     
+     <input list="browsers" class="form-control"  onclick="myFunction()">
+  <datalist id="browsers">
+    <option value="Internet Explorer">
+    <option value="Firefox">
+    <option value="Chrome">
+    <option value="Opera">
+    <option value="Safari">
+  </datalist>
+  
+  </div>
+  <div id="myDIV">
+   <div class="form-group">
+      
+      <input list="browsers" class="form-control" name="browser">
+  <datalist id="browsers">
+    <option value="Internet Explorer">
+    <option value="Firefox">
+    <option value="Chrome">
+    <option value="Opera">
+    <option value="Safari">
+  </datalist>
+    </div>
+    <div class="form-group">
+    
+      <input list="browsers" class="form-control" name="browser">
+  <datalist id="browsers">
+    <option value="Internet Explorer">
+    <option value="Firefox">
+    <option value="Chrome">
+    <option value="Opera">
+    <option value="Safari">
+  </datalist>
+    </div>
+
+   </div>
+   <button type="submit" id="modelbtn1" class="btn btn-default">BOOK RIDE</button>
+
+</div>
+</div>
+</div></div>
+</div>
+</div></section>
+
+<script>
+// Get the modal
+var modal = document.getElementById('myModal');
+
+// Get the button that opens the modal
+var btn = document.getElementById("myBtn");
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks the button, open the modal 
+btn.onclick = function() {
+    modal.style.display = "block";
+}
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() {
+    modal.style.display = "none";
+}
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+}
+</script>
+<script>
+function myFunction() {
+    var x = document.getElementById("myDIV");
+    if  {
+        x.style.display = "none";
+    }
+}
+</script>
+<!--========================================================================
+========================================================================= -->
+	<div class="cd-secondary-nav">
+		<a href="#0" class="cd-secondary-nav-trigger">Menu<span></span></a> <!-- button visible on small devices -->
+		<nav>
+			<ul>
+				<li>
+					<a href="#cd-placeholder-1">
+						<b>About</b>
+						<span></span><!-- icon -->
+					</a>
+				</li>
+				<li>
+					<a href="#cd-placeholder-2">
+						<b>Location</b>
+						<span></span><!-- icon -->
+					</a>
+				</li>
+				<li>
+					<a href="#cd-placeholder-3">
+						<b>Chat</b>
+						<span></span><!-- icon -->
+					</a>
+				</li>
+				<li>
+					<a href="#cd-placeholder-4">
+						<b>Calendar</b>
+						<span></span><!-- icon -->
+					</a>
+				</li>
+				<li>
+					<a href="#cd-placeholder-5">
+						<b>contact us</b>
+						<span></span><!-- icon -->
+					</a>
+				</li>
+			</ul>
+		</nav>
+	</div> <!-- .cd-secondary-nav -->
+	
+	<header class="cd-header">
+		<div id="cd-logo"><a href="#0"><img src="img/cd-logo.svg" alt="Logo"></a></div>
+		
+		<!-- cd-primary-nav -->
+	</header>
+	<!-- <main class="cd-main-content"> -->
+		<div class="scontainer cd-section" id="cd-placeholder-1" >
+			<div class="row">
+				<div class="col-md-3">
+					<center>
+					<img src="img/img1.png" width="20%">
+					<br>
+					<h2>Fast And Affordable</h2>
+					<p>We fares are 40% cheaper than cabs. With ETA as low as 5 minutes, Jugnoo ride is available 24*7.</p></center>	
+				</div>
+			<div class="col-md-3">
+			<center>	<img src="img/img4.png" width="30%">
+				<br>
+				<h2>Your Safety First</h2>
+				<p>Keep your loved ones informed
+					about your travel routes or call
+					emergency services when in need.</p>
+			</center>
+			</div>
+				<div class="col-md-3">
+					<center><img src="img/img2.png" width="17%">	
+						<br>
+						<h2>Convenience Delivered</h2>
+						<p>Book a ride and set your drop location, the driver comes directly to your door in a few minutes. Request. Ride. Repeat.</p>
+					</center>
+				</div>
+
+				<div class="col-md-3">
+					<center><img src="img/img3.png" width="20%">
+					<br>	
+						<h2>Anywhere,Anytime</h2>
+						
+						<p>Home to work or anywhere in between, count on Jugnoo for a ride. Simply book one, when you need one.</p>
+					</center>			</div>
+			</div>
+			<br><br><br><br><br><br>
+			<div class="row">
+				<div class="col-md-6">
+					<center><img src="img/auto.png"></center>
+				</div>
+				<div class="col-md-4">
+					<center>
+							<br><br><br><h2>Get Your Auto At Your Doorstap</h2>
+						<p>The all familiar auto ride, minus the hussle
+						of waiting and haggling for price.
+					Aconvenient way to travell everyday.</p>
+					</center>
+					
+				</div>
+			</div>
+		</div> 
+		<!-- #cd-placeholder-1 -->
+
+		<section id="cd-placeholder-2" class="cd-section cd-container">
+			<h2>Location</h2>
+			<p>
+				Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem ab consequatur fugiat delectus sint in velit quo possimus, ullam aspernatur ipsa natus tenetur nulla distinctio doloremque totam. Earum enim sed dolorum, exercitationem temporibus quaerat eos, accusantium amet facilis facere eaque commodi optio quidem rem minima nisi laborum quae animi nostrum aut voluptates veniam. Cum neque quam fuga sapiente quidem eum necessitatibus nulla, cupiditate a, repudiandae iusto in dolor eaque commodi nostrum consequuntur dolores velit eligendi dolorem quae. Distinctio quae, cumque aliquid quos consequuntur perspiciatis voluptates, laboriosam velit qui et aut sint esse nemo voluptatibus, dolore veritatis natus facilis commodi sed. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat omnis quia maiores, et. Aut facilis ducimus, labore culpa, nemo eum qui quae, rem libero aspernatur, inventore quos modi a ex sit. Nulla iure odio at quo corporis assumenda ea fugiat adipisci aspernatur incidunt sapiente consequatur, ullam cumque dolorem facilis laboriosam a dolore similique velit esse. Eveniet omnis voluptas, nobis dicta cupiditate odit, similique mollitia eos dignissimos provident voluptatem adipisci ullam facilis alias! Reprehenderit voluptatem provident ut veniam aliquid, labore culpa.
+			</p>
+		</section> <!-- #cd-placeholder-2 -->
+
+		<section id="cd-placeholder-3" class="cd-section cd-container">
+			<h2>Chat</h2>
+			<p>
+				Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem ab consequatur fugiat delectus sint in velit quo possimus, ullam aspernatur ipsa natus tenetur nulla distinctio doloremque totam. Earum enim sed dolorum, exercitationem temporibus quaerat eos, accusantium amet facilis facere eaque commodi optio quidem rem minima nisi laborum quae animi nostrum aut voluptates veniam. Cum neque quam fuga sapiente quidem eum necessitatibus nulla, cupiditate a, repudiandae iusto in dolor eaque commodi nostrum consequuntur dolores velit eligendi dolorem quae. Distinctio quae, cumque aliquid quos consequuntur perspiciatis voluptates, laboriosam velit qui et aut sint esse nemo voluptatibus, dolore veritatis natus facilis commodi sed. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias sunt mollitia atque tempore ea cum exercitationem, quisquam est consectetur tempora ipsam, obcaecati voluptate a. Autem minus cumque voluptatem eaque fugit nostrum reprehenderit incidunt officia. Nesciunt reiciendis delectus officiis fugit sint at totam nisi commodi repellendus iusto dolorum molestias dignissimos natus, impedit quam atque ex voluptas ut facere assumenda iure incidunt rerum vitae accusamus? Et voluptatibus unde, fugiat tenetur sed dolore, praesentium magni illo nobis incidunt, possimus doloremque dolorem sunt. Aliquid ducimus delectus esse voluptatem officia perferendis, a voluptate omnis adipisci expedita distinctio praesentium natus veniam accusamus iure, quasi, inventore reiciendis.
+			</p>
+		</section> <!-- #cd-placeholder-3 -->
+
+		<section id="cd-placeholder-4" class="cd-section cd-container">
+			<h2>Calendar</h2>
+			<p>
+				Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem ab consequatur fugiat delectus sint in velit quo possimus, ullam aspernatur ipsa natus tenetur nulla distinctio doloremque totam. Earum enim sed dolorum, exercitationem temporibus quaerat eos, accusantium amet facilis facere eaque commodi optio quidem rem minima nisi laborum quae animi nostrum aut voluptates veniam. Cum neque quam fuga sapiente quidem eum necessitatibus nulla, cupiditate a, repudiandae iusto in dolor eaque commodi nostrum consequuntur dolores velit eligendi dolorem quae. Distinctio quae, cumque aliquid quos consequuntur perspiciatis voluptates, laboriosam velit qui et aut sint esse nemo voluptatibus, dolore veritatis natus facilis commodi sed. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam, minus nisi ipsam quasi. Reprehenderit quo dolorem ratione in, porro placeat nihil asperiores, ab earum excepturi sint non. Error officiis, sint expedita dolore fuga voluptates ipsam temporibus vero suscipit porro asperiores deserunt sapiente optio. Quas vero nam nihil, id suscipit, similique facere dicta velit, quis, commodi perspiciatis. Perferendis necessitatibus, in, sequi ipsum eum voluptates quisquam voluptatem, rerum fugiat deleniti voluptatum eius odio, expedita enim libero quaerat! Veniam eos, maiores nostrum mollitia reprehenderit, obcaecati repudiandae eius perspiciatis? Quo voluptatum ipsa voluptatem sequi esse eius consectetur, quae ea accusamus porro autem ipsum, quam dignissimos, nesciunt consequuntur quaerat. Numquam iure velit veniam saepe sunt enim asperiores hic nam aperiam illo officia molestias quis dicta autem incidunt consequatur dolor, explicabo corrupti nostrum odio ea laudantium magni, nulla. Eaque officiis, distinctio, dolores eligendi facilis tempore reiciendis illum iste sed temporibus rerum aliquid culpa dolor, et voluptatibus!
+			</p>
+		</section> <!-- #cd-placeholder-4 -->
+
+		<div id="cd-placeholder-5" class="cd-section container">
+			<div class="row">
+				<div class="col-md-12">
+					<h3>Social Links</h3>
+	
+				</div>
+			</div>
+			</div>
+
+			<!-- #cd-placeholder-5 -->
+	<!-- </main>  --><!-- .cd-main-content -->
+	
+<script src="js/jquery-2.1.1.js"></script>
+<script src="js/main.js"></script> <!-- Resource jQuery -->
 </body>
 </html>
